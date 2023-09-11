@@ -12,6 +12,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,6 +26,11 @@
       <div class="container header-container">
         <nav class="navi">
           <a href="./index.html" class="logo">Web<span>Studio</span></a>
+          <button class="menu-button" type="button">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+            </svg>
+          </button>
           <ul class="menu-list">
             <li class="header-list">
               <a class="menu-item active-link" href="./index.html">Studio</a>
@@ -325,7 +331,6 @@
                   src="./images/app.jpg"
                   alt="mobil-app"
                   width="360"
-                  height="300"
                 />
 
                 <p class="overlay">
@@ -347,7 +352,6 @@
                   src="./images/phone.jpg"
                   alt="phone-qr-code"
                   width="360"
-                  height="300"
                 />
 
                 <p class="overlay">
@@ -369,7 +373,6 @@
                   src="./images/laptop.jpg"
                   alt="laptop-app"
                   width="360"
-                  height="300"
                 />
 
                 <p class="overlay">
@@ -391,7 +394,6 @@
                   src="./images/car.jpg"
                   alt="taxi-mobil-service"
                   width="360"
-                  height="300"
                 />
 
                 <p class="overlay">
@@ -413,7 +415,6 @@
                   src="./images/phone-1.jpg"
                   alt="mobil-screen"
                   width="360"
-                  height="300"
                 />
 
                 <p class="overlay">
@@ -435,7 +436,6 @@
                   src="./images/funny-girl.jpg"
                   alt="girl-with-mobile"
                   width="360"
-                  height="300"
                 />
 
                 <p class="overlay">
@@ -466,7 +466,7 @@
           </p>
         </div>
         <div class="footer-box">
-          <p class="paragraph-footer">Social media</p>
+          <p class="paragraph-footer footer-media">Social media</p>
           <ul class="footer-icon-list">
             <li class="svg-list">
               <a href="#" class="svg-list-link footer-hover">
@@ -500,8 +500,8 @@
         </div>
 
         <div class="subscribe-input">
-          <p class="paragraph-footer">Subscribe</p>
-          <form action="#" class="footer-form">
+          <p class="paragraph-footer footer-media">Subscribe</p>
+          <form class="footer-form">
             <label class="subscribe-label">
               <input
                 class="footer-input"
@@ -509,7 +509,7 @@
                 name="email"
                 placeholder="E-mail"
             /></label>
-            <button type="submit" class="footer-button">
+            <button class="footer-button" type="submit">
               Subscribe
               <svg width="24" height="24" class="footer-svg-icon">
                 <use href="./images/icons.svg#icon-subscribe"></use>
@@ -595,14 +595,80 @@
                   <use
                     href="./images/icons.svg#icon-checkbox"
                   ></use></svg></span
-              >I accept the terms and conditions of the<a class="policy-link"
-                >Privacy Policy</a
-              ></label
+              >I accept the terms and conditions of the
+              <a class="policy-link" href="#">Privacy Policy</a></label
             >
           </div>
           <button type="submit" class="form-button">Send</button>
         </form>
       </div>
+    </div>
+
+    <!-- ====== Modal-Menu ===== -->
+
+    <div class="modal-menu">
+      <button type="button" class="modal-close-menu">
+        <svg width="8" height="8" class="close-icon">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+      <nav class="modal-navi">
+        <ul class="modal-menu-list">
+          <li class="modal-header-list">
+            <a class="modal-menu-item" href="./index.html">Studio</a>
+          </li>
+          <li class="header-list">
+            <a class="modal-menu-item" href="#">Portfolio</a>
+          </li>
+          <li class="header-list">
+            <a class="modal-menu-item" href="#">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <address class="modal-address">
+        <ul class="modal-adress-list">
+          <li>
+            <a class="modal-adress-item" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="modal-adress-item" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+      </address>
+      <ul class="footer-icon-list">
+        <li class="svg-list">
+          <a href="#" class="svg-list-link footer-hover">
+            <svg class="footer-svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="svg-list">
+          <a href="#" class="svg-list-link footer-hover">
+            <svg class="footer-svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="svg-list">
+          <a href="#" class="svg-list-link footer-hover">
+            <svg class="footer-svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="svg-list">
+          <a href="#" class="svg-list-link footer-hover">
+            <svg class="footer-svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </body>
 </html>

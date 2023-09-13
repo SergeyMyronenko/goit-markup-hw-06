@@ -167,10 +167,6 @@ section {
   pointer-events: none;
 }
 
-.modal-navi {
-  margin-bottom: 168px;
-}
-
 .modal-close-menu {
   position: absolute;
   top: 24px;
@@ -200,6 +196,9 @@ section {
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+.modal-navi {
+  margin-bottom: 24px;
 }
 .modal-menu-item-color {
   color: #404bbf;
